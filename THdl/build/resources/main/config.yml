@@ -1,0 +1,56 @@
+# 桃韵斋大厅插件配置文件
+
+# 出生点设置
+spawn:
+  world: world
+  x: -802.482089303779
+  y: 18.0
+  z: 11.33917426588768
+  yaw: 88.46579
+  pitch: -0.15032472
+
+# 加入退出消息设置
+join-quit-messages:
+  join:
+    enabled: true
+    messages:
+      - <gray>[<green><bold>+<gray>] <reset>{player}
+  quit:
+    enabled: true
+    messages:
+      - <gray>[<red><bold>-<gray>] <reset>{player}
+
+# Velocity跨服传送支持
+velocity-support:
+  enabled: true
+  servers:
+    主城大区: zcdq
+area-teleport:
+  enabled: true
+  server: 主城大区
+  cooldown-seconds: 5
+  message: <green>检测到玩家进入传送区域，正在进入桃韵斋...
+  cooldown-message: <red>传送冷却中，请稍后再试！
+  selection-tool: STICK
+  areas:
+    - world: world
+      z1: 14.0
+      name: cs
+      y1: 17.0
+      z2: 8.0
+      x1: -810.0
+      y2: 17.0
+      x2: -807.0
+  message-cooldown-seconds: 3
+holograms:
+  dl:
+    world: world
+    x: -808
+    y: 20
+    z: 11.50359301096409
+    lines:
+      - <light_purple>桃韵斋-生存冒险篇
+      - 您当前所在<yellow>[登陆大厅]
+      - 当前有<green>[{total_online}]名<reset>玩家正在游玩...
+      - <light_purple>跳入水中去开始您的新征程
+

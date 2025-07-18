@@ -1,0 +1,24 @@
+api-version: '1.21'
+name: THdl
+folia-supported: true
+version: 3.0.0
+main: com.xuanming.tHdl.THdl
+description: 桃韵斋-全息 保护 传送
+author: xuanming
+
+commands:
+  tyz:
+    description: 桃韵斋大厅插件主命令（支持Tab补全）
+    usage: /tyz [setspawn|hologram|reload|help|area]
+    permission: op
+
+permissions:
+  thdl.admin:
+    description: 管理员权限，允许设置出生点、重载配置、管理区域传送等
+    default: op
+  thdl.hologram:
+    description: 全息影像管理权限
+    default: op
+  thdl.area.select:
+    description: 区域选择工具权限
+    default: op
